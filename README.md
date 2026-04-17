@@ -13,6 +13,29 @@ This is a skill package repository, not a standalone Python service.
 - 每日日报推送
 - 旅行项目状态自动更新
 
+## Quick Start
+
+If you just want to try this skill with your own agent, use this path:
+
+1. Open the latest GitHub Release and download `travel-expense-tracker.skill`
+2. Import that `.skill` file into your agent platform
+3. Make sure your agent runtime provides the required tools in `skill/references/tool_contracts.md`
+4. Configure your Feishu app credentials, bot access, and Bitable permissions
+5. Start using prompts like "记一笔旅行消费" or send a payment screenshot in your Feishu group
+
+## How to Import This `.skill` Into Your Agent
+
+The exact UI differs by platform, but the usual flow is:
+
+1. Go to your agent platform's skill or extension import page
+2. Choose **Import from file** or an equivalent option
+3. Upload `travel-expense-tracker.skill` from the latest release
+4. Confirm the imported skill metadata and enable it for your target agent
+5. Map the required runtime tools if your platform asks for tool bindings
+6. Add your Feishu configuration and test with a sample message or screenshot
+
+If your platform does not support `.skill` import directly, clone this repository and wire the files under `skill/` into your own runtime manually.
+
 ## Features
 
 - Screenshot-to-expense workflow for travel receipts and payment screenshots
