@@ -1,0 +1,12 @@
+{
+  "amount": "¥128.50",
+  "currency": "CNY",
+  "merchant": "海底捞",
+  "expense_time": "2026-04-17 18:30:05",
+  "category": "餐费",
+  "transaction_status": "交易成功",
+  "expense_type": "AA",
+  "check_in": null,
+  "check_out": null,
+  "notes": "示例数据，已脱敏"
+}

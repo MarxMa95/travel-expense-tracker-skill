@@ -1,0 +1,6 @@
+interface:
+  display_name: "Travel Expense Tracker"
+  short_description: "Feishu 群旅行记账与日报 skill"
+  default_prompt: "Use $travel-expense-tracker to run shared travel expense tracking in a Feishu group with Bitable-backed records."
+policy:
+  allow_implicit_invocation: true

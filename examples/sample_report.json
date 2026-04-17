@@ -1,0 +1,41 @@
+{
+  "project_name": "日本游",
+  "start_date": "2026-04-20",
+  "end_date": "2026-04-25",
+  "destination": "东京",
+  "today": "2026-04-21",
+  "today_total": 128,
+  "today_count": 1,
+  "payer_distribution": {
+    "Alice": 128
+  },
+  "expense_type_distribution": {
+    "公共 AA": 128
+  },
+  "category_distribution": {
+    "餐饮": {
+      "amount": 128,
+      "percentage": 100
+    }
+  },
+  "today_records": [
+    {
+      "merchant": "海底捞",
+      "amount": 128,
+      "category": "餐饮",
+      "expense_type": "公共 AA",
+      "payer": "Alice"
+    }
+  ],
+  "project_total": 512,
+  "days_passed": 2,
+  "days_remaining": 4,
+  "daily_avg": 256,
+  "payer_stats": {
+    "Alice": {
+      "amount": 512,
+      "percentage": 100
+    }
+  },
+  "table_url": "https://example.com/table"
+}
