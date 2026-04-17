@@ -1,5 +1,10 @@
 # Travel Expense Tracker Skill
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-travel--expense--tracker--skill-181717?logo=github)](https://github.com/MarxMa95/travel-expense-tracker-skill)
+[![Release](https://img.shields.io/github/v/release/MarxMa95/travel-expense-tracker-skill)](https://github.com/MarxMa95/travel-expense-tracker-skill/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Skill Package](https://img.shields.io/badge/Artifact-.skill-blue)](https://github.com/MarxMa95/travel-expense-tracker-skill/releases)
+
 An open-source travel expense tracking skill for OpenClaw-like agents running in Feishu groups.
 
 This is a skill package repository, not a standalone Python service.
@@ -35,6 +40,20 @@ The exact UI differs by platform, but the usual flow is:
 6. Add your Feishu configuration and test with a sample message or screenshot
 
 If your platform does not support `.skill` import directly, clone this repository and wire the files under `skill/` into your own runtime manually.
+
+## Usage Flow
+
+```mermaid
+flowchart TD
+    A[Download .skill from GitHub Release] --> B[Import into your agent platform]
+    B --> C[Bind required runtime tools]
+    C --> D[Configure Feishu app and bot]
+    D --> E[Connect Feishu Bitable]
+    E --> F[Send text expense or screenshot in group]
+    F --> G[Agent extracts and normalizes expense data]
+    G --> H[Write records into Bitable]
+    H --> I[Send confirmation and daily report]
+```
 
 ## Features
 
